@@ -14,7 +14,7 @@ function Favorites() {
           state.news.length > 0 ? (
             <NewsCardList newsList={state.news} />
           ) : ( 
-          <p>Momentan nu ai nicio știre favorită.</p>
+          <p>You don't have any favorites news yet.</p>
         )}
       </Container>
     </Layout>

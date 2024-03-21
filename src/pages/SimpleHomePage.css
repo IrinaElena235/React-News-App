@@ -1,67 +1,72 @@
 .bodyStyle {
-    margin: 0;
-    background: linear-gradient(to bottom, rgb(92, 117, 92), #e9e9db);
-    min-height: 100vh;
-  }
-  
-  .containerStyle {
-    text-align: center;
-    width: 100%;
-  }
-  
-  .headingStyle {
-    color: rgb(200, 204, 200);
-    padding: 50px;
-    font-size: 80px;
-    transition: all 1s;
-  }
-  
-  .headingStyle.hovered {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transform: scale(1.1);
-  }
-  
-  .paragraphStyle {
-    text-align: left; 
-    max-width: 600px; 
-    margin: 0 auto; 
-    padding: 20px; 
-    line-height: 1.5; 
-    font-size: 20px;
-    line-height: 1.8;
-    margin-left: 20px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  
-  .heading {
-    color: rgb(200, 204, 200);
-    padding: 50px;
-    font-size: 50px;
-    transition: all 2s;
-  }
+.containerStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(111, 136, 108), #eeeede);
+}
 
-  .scroll-button{
-    background: none; 
-    border: none; 
-    position: relative; 
-    top: -30px;
-  }
+.title{
+  font-family: "Poppins";
+  font-size: 6rem;
+  position: relative;
+  margin-top: -15rem;
+  background: linear-gradient(45deg, #cec5c5, #4e4b4b, #cfc2c2, #ffffff, rgb(202, 183, 183)  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s ease infinite;
+}
 
-  .scroll-button img {
-    width: 30px; 
-    height: auto;
-    filter: hue-rotate(100deg);
-    position: relative;
-    animation: moveUpDown 0.5s ease-in-out infinite alternate;
-  }
+.paragraph1 {
+  font-family: "Open Sans", sans-serif; 
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: rgb(80, 78, 78); 
 
-  @keyframes moveUpDown {
-    0% {
+}
+
+.scroll-button{
+  background: none; 
+  border: none; 
+  position: fixed;
+  top: 90%; 
+  left: 50%; 
+  transform: translate(-50%, 50%); 
+  z-index: 999; 
+}
+
+.scroll-button img {
+  width: 30px; 
+  height: auto;
+  filter: hue-rotate(100deg);
+  position: relative;
+  animation: moveUpDown 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
       top: 0; 
-    }
-    100% {
-      top: 10px; 
-    }
   }
+  100% {
+      top: 10px; 
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

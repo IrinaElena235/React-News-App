@@ -2,13 +2,17 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  background-color:rgb(92, 117, 92);
+  background-color: rgb(111, 136, 108)
 }
 
 .Header .nav img {
   width: auto;
   height: 80px;
   border-radius: 50%;
+  position: absolute; 
+  left: 30px; 
+  top: 50%;
+  transform: translateY(-50%); 
 }
 
 .Header .menu-icon {

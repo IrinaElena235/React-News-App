@@ -6,7 +6,7 @@
   --text-light: #e7eed9;
 
   --bg-primary: #3f683b;
-  --bg-secondary: #e9e9db;
+  --bg-secondary: #eeeede;
   --bg-dark: #101d42;
 }
 
@@ -34,7 +34,6 @@ a {
 
 a:hover {
   color: black !important;
-  transform:  scale(1.1) !important;
 }
 
 .btn-primary,
@@ -69,7 +68,7 @@ a:hover {
 }
 
 .bg-dark {
-  background-color: rgb(92, 117, 92) !important;
+  background-color: rgb(92, 117, 92)!important;
 }
 
 h1,

@@ -1,10 +1,10 @@
 # IT School news
 
-This is the final project from my Web Development course that I teach @ IT School.
+This is the final project from my Web Development course that I took @ IT School.
 
 ## Demo
 
-The project is deployed at [itschool-news.netlify.app](https://itschool-news.netlify.app).
+The project is deployed at: https://itschool-news-irina-main.netlify.app/
 
 ## Features
 
@@ -24,3 +24,4 @@ The project covers the following concepts:
 * Custom hooks
 * CSS Modules
 # irina-news-app
+# News-App
