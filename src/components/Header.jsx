@@ -27,7 +27,6 @@ function Header() {
     border: "black",
     transform: "translateY(-3px)", 
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-    // padding:"50px", 
     borderRadius: "20%",
   };
 
