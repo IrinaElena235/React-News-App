@@ -1,10 +1,10 @@
-# IT School news
+# News Website
 
 This is the final project from my Web Development course that I took @ IT School.
 
 ## Demo
 
-The project is deployed at: https://itschool-news-irina-main.netlify.app/
+The project is deployed at: https://itschool-news-irina-main.netlify.app
 
 ## Features
 
@@ -13,6 +13,7 @@ The project has the following features:
 * Paginate news
 * Display individual news
 * Add/remove news to favorites
+* Persist favorite news through localStorage
 
 ## Concepts
 
@@ -23,5 +24,3 @@ The project covers the following concepts:
 * State management (Context API + usereducer)
 * Custom hooks
 * CSS Modules
-# irina-news-app
-# News-App

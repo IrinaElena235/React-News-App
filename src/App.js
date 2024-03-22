@@ -8,6 +8,7 @@ import NewsCategory from "./pages/NewsCategory";
 import NewsDetails from "./pages/NewsDetails";
 import { initialState, favoritesReducer } from './store/favorites/reducer';
 import { FavoritesContext } from './store/favorites/context';
+import { useLocalStorage } from "./utils/hooks/useLocalStorage";
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,8 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const [state, dispatch] = useReducer(favoritesReducer, initialState);
+  const [initialLocalStorageState] = useLocalStorage("favorites", initialState);
+  const [state, dispatch] = useReducer(favoritesReducer, initialLocalStorageState);
   const favoritesContextValue = {
     state,
     dispatch,
