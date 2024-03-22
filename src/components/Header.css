@@ -46,6 +46,15 @@
     position: relative;
   }
 
+  .Header .nav img {
+    width: auto;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute; 
+    left: 30px; 
+    top: 140%;
+    transform: translateY(-50%); 
+  }
   .Header .display-mobile-menu {
     display: block;
     width: 100%;

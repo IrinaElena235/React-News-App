@@ -70,3 +70,22 @@
     background-position: 0% 50%;
   }
 }
+
+@media(max-width: 768px) {
+  .containerStyle {
+    height: 100vh;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-top: -5rem;
+  }
+
+  .paragraph1 {
+    font-size: 1.2rem;
+  }
+
+  .scroll-button {
+    display: block;
+  }
+}
